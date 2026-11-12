@@ -1,0 +1,731 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Bayview Dental Studio — Calm, Modern Dentistry in San Francisco</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "secondary-fixed": "#e5e2e0",
+            "on-primary": "#ffffff",
+            "surface": "#fbf9f4",
+            "on-error-container": "#93000a",
+            "on-surface": "#1b1c19",
+            "secondary": "#5f5e5d",
+            "on-tertiary-fixed-variant": "#484740",
+            "primary-fixed-dim": "#adcebe",
+            "on-surface-variant": "#414845",
+            "on-error": "#ffffff",
+            "surface-dim": "#dbdad5",
+            "on-secondary-container": "#636261",
+            "on-tertiary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "error-container": "#ffdad6",
+            "primary": "#153328",
+            "on-secondary-fixed": "#1c1c1a",
+            "surface-tint": "#466558",
+            "inverse-on-surface": "#f2f1ec",
+            "surface-container": "#f0eee9",
+            "secondary-fixed-dim": "#c9c6c4",
+            "on-background": "#1b1c19",
+            "on-primary-container": "#98b9a9",
+            "primary-fixed": "#c8eada",
+            "surface-container-highest": "#e4e2dd",
+            "outline": "#727974",
+            "on-secondary-fixed-variant": "#474745",
+            "surface-container-low": "#f5f3ee",
+            "on-primary-fixed": "#012016",
+            "inverse-primary": "#adcebe",
+            "surface-bright": "#fbf9f4",
+            "background": "#fbf9f4",
+            "on-primary-fixed-variant": "#2f4d41",
+            "secondary-container": "#e2dfdd",
+            "error": "#ba1a1a",
+            "tertiary-fixed-dim": "#cac6bd",
+            "surface-variant": "#e4e2dd",
+            "on-tertiary-container": "#b4b1a8",
+            "inverse-surface": "#30312e",
+            "tertiary-fixed": "#e6e2d8",
+            "primary-container": "#2c4a3e",
+            "tertiary-container": "#46443d",
+            "on-secondary": "#ffffff",
+            "surface-container-high": "#eae8e3",
+            "tertiary": "#2f2e27",
+            "on-tertiary-fixed": "#1c1c16",
+            "outline-variant": "#c1c8c3"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "margin": "4rem",
+            "space-xl": "3rem",
+            "gutter-mobile": "1rem",
+            "space-lg": "1.75rem",
+            "space-md": "1rem",
+            "margin-mobile": "1.25rem",
+            "gutter": "1.5rem",
+            "space-xs": "0.25rem",
+            "margin-tablet": "2rem",
+            "space-2xl": "5rem",
+            "space-sm": "0.5rem"
+          },
+          fontFamily: {
+            "body-xl": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "display-lg": ["Playfair Display"],
+            "headline-xl-mobile": ["Playfair Display"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-xl": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Playfair Display"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"]
+          },
+          fontSize: {
+            "body-xl": ["18px", { lineHeight: "28px", letterSpacing: "-0.005em", fontWeight: "400" }],
+            "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.08em", fontWeight: "600" }],
+            "display-lg": ["56px", { lineHeight: "64px", letterSpacing: "-0.02em", fontWeight: "400" }],
+            "headline-xl-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "400" }],
+            "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.1em", fontWeight: "600" }],
+            "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.015em", fontWeight: "400" }],
+            "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "500" }],
+            "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }],
+            "display-lg-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.01em", fontWeight: "400" }],
+            "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "400" }],
+            "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "0em", fontWeight: "500" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    details summary::-webkit-details-marker {
+      display:none;
+    }
+    .fine-border {
+      border: 1px solid #E6E2D8;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary-fixed-dim selection:text-primary">
+<!-- 1. MINIMALIST STICKY GLASS NAVBAR (Shared Component: TopNavBar Anchor) -->
+<header class="bg-surface/80 backdrop-blur-md text-primary docked full-width top-0 sticky z-50 border-b border-outline-variant/40 shadow-sm transition-all duration-300 ease-out">
+<div class="max-w-[1360px] mx-auto px-margin-tablet lg:px-margin flex items-center justify-between h-20 w-full">
+<!-- Brand Logo -->
+<a class="font-headline-md text-headline-md tracking-[0.2em] uppercase text-primary font-medium flex items-center gap-2 group" href="#" onclick="event.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'});">
+<span>BAYVIEW DENTAL STUDIO</span>
+</a>
+<!-- Smooth Navigation Links -->
+<nav class="hidden md:flex items-center space-x-8"><a class="text-secondary hover:text-primary transition-colors tracking-widest text-label-md uppercase font-label-md cursor-pointer" href="#clinic-tour" onclick="event.preventDefault(); document.getElementById('clinic-tour')?.scrollIntoView({behavior: 'smooth'});">Our Clinic</a>
+<a class="text-secondary hover:text-primary transition-colors tracking-widest text-label-md uppercase font-label-md cursor-pointer" href="#treatments" onclick="event.preventDefault(); document.getElementById('treatments')?.scrollIntoView({behavior: 'smooth'});">Treatments</a>
+<a class="text-secondary hover:text-primary transition-colors tracking-widest text-label-md uppercase font-label-md cursor-pointer" href="#doctor" onclick="event.preventDefault(); document.getElementById('doctor')?.scrollIntoView({behavior: 'smooth'});">Meet the Doctor</a>
+<a class="text-secondary hover:text-primary transition-colors tracking-widest text-label-md uppercase font-label-md cursor-pointer" href="#reviews" onclick="event.preventDefault(); document.getElementById('reviews')?.scrollIntoView({behavior: 'smooth'});">Patient Stories</a>
+<a class="text-secondary hover:text-primary transition-colors tracking-widest text-label-md uppercase font-label-md cursor-pointer" href="#faq" onclick="event.preventDefault(); document.getElementById('faq')?.scrollIntoView({behavior: 'smooth'});">FAQ</a></nav>
+<!-- Right Trailing Actions -->
+<div class="flex items-center space-x-4 lg:space-x-6">
+<a class="hidden sm:inline-flex items-center gap-1.5 text-label-md font-label-md tracking-wider text-secondary hover:text-primary transition-colors py-2 cursor-pointer" href="tel:+14155550199">
+<span class="material-symbols-outlined text-base">call</span>
+<span>(415) 555-0199</span>
+</a>
+<a class="inline-flex items-center justify-center bg-primary hover:bg-[#1f352c] text-surface font-label-md text-label-md tracking-widest uppercase px-5 py-2.5 rounded-full transition-all duration-200 transform hover:-translate-y-0.5 shadow-sm cursor-pointer" href="#book-call" onclick="event.preventDefault(); document.getElementById('book-call')?.scrollIntoView({behavior: 'smooth'});">
+          Book a Call
+        </a>
+</div>
+</div>
+</header>
+<main>
+<!-- 2. FULL-VIEW ARCHITECTURAL HERO SECTION -->
+<section class="relative pt-6 pb-20 lg:pt-10 lg:pb-space-2xl overflow-hidden">
+<div class="max-w-[1360px] mx-auto px-margin-tablet lg:px-margin">
+<!-- Top Editorial Header & Floating Trust Rating -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container border border-tertiary-fixed text-primary text-label-sm font-label-sm mb-4">
+<span class="text-[#D4AF37] tracking-tighter">★★★★★</span>
+<span class="tracking-wide">4.9 RATED SAN FRANCISCO DENTAL STUDIO</span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary max-w-3xl leading-[1.08] tracking-tight">
+              Calm, Modern Dentistry Built Around Your Comfort.
+            </h1>
+</div>
+<div class="max-w-md pb-2">
+<p class="font-body-xl text-body-xl text-secondary mb-6">
+              From sudden tooth pain relief to routine cleanings and natural smile makeovers—experience gentle, unhurried dental care in a warm studio space.
+            </p>
+<div class="flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center gap-2 bg-primary hover:bg-primary-container text-surface px-6 py-3.5 rounded-lg font-label-md text-label-md tracking-wider uppercase transition-all duration-200 transform hover:-translate-y-0.5 shadow-sm" href="#book-call">
+<span>Book a Quick Call</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-2 border border-primary text-primary hover:bg-primary hover:text-surface px-5 py-3.5 rounded-lg font-label-md text-label-md tracking-wider transition-all duration-200" href="tel:+14155550199">
+<span class="material-symbols-outlined text-sm">call</span>
+<span>(415) 555-0199</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Architectural Hero Frame -->
+<div class="relative w-full rounded-3xl overflow-hidden shadow-xl border border-tertiary-fixed h-[460px] md:h-[620px]">
+<img class="w-full h-full object-cover object-center" data-alt="Sunlit architectural dental reception lounge featuring custom fluted oak wood paneling, an authentic raw-edge stone travertine reception desk, elegant curved plaster walls, serene cream boucle sofas, natural potted fiddle-leaf fig tree, and floor-to-ceiling glass windows offering soft indirect daylight in an understated luxury San Francisco aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3qs5TKGLEfPnGn3Sj0icwvOtwAJVnTYG4fiB7zwy0aAdsdbSYShQYEEBKNIzDziPKJvRkiNcxmAOYlAGWl2nJ9IUu1pJx99CNtosxHdLjvnNit4Mzwr_MeTs8EXdGg7ATC55K-UwZeea5p0hGEGYxIKuRoBpEAtKQDVl7f8zY1S5YVRDyqYQQivoa8lk8p8VFo5tWf2lCKdKBi_diqkBIAsTuzDgh54yF1aZ0R_fpgj6iUlqQB0cyQQ">
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+<!-- Subtle Floating Overlay Inscription -->
+<div class="absolute bottom-6 left-6 md:bottom-10 md:left-10 bg-surface/90 backdrop-blur-md border border-tertiary-fixed p-4 md:p-6 rounded-2xl max-w-sm">
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold mb-1">Architecture of Tranquility</p>
+<p class="font-body-sm text-body-sm text-secondary">
+              Designed by award-winning California architects to neutralize clinical apprehension from the moment you step through our doors.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. VISUAL TOUR BENTO SECTION -->
+<section class="py-20 lg:py-space-2xl bg-surface-container-low border-y border-tertiary-fixed" id="clinic-tour">
+<div class="max-w-[1360px] mx-auto px-margin-tablet lg:px-margin">
+<div class="max-w-2xl mb-12">
+<p class="text-label-md font-label-md text-primary tracking-widest uppercase mb-2">Private Sanctuary</p>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-3">
+            Step Inside Our San Francisco Studio.
+          </h2>
+<p class="font-body-md text-body-md text-secondary">
+            Designed to feel like a calm residential lounge, not a cold hospital. Every detail serves your peace of mind.
+          </p>
+</div>
+<!-- Bento Grid Gallery -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8 items-stretch">
+<!-- Bento 1: Large Featured Card -->
+<div class="md:col-span-7 bg-surface-container-lowest rounded-2xl overflow-hidden border border-tertiary-fixed flex flex-col group shadow-sm transition-all hover:border-outline">
+<div class="relative h-80 md:h-[420px] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Wide perspective photograph of a sunlit architectural dental clinic lounge in San Francisco with organic travertine stone textures, fluted wall detailing, soft linen armchairs, olive branch vases, and floor-to-ceiling panoramic glass windows bathed in serene warm daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO-UwUAxvmvx116vd2iqJp_p9EofdEaxJuQUjg0SjZccuNaQP3Dob2GF6jsxiVpxrxk5P1JHnYfk4BCx5lCD2dsyHHnGM0TceS0psvRW44oErzW24MtWbTi-L7u264D2ZXWePexdjqDcJeuNIZOOBslC2dzf7j81SGX49hj7FKshgB54E4IUkxBDR9rAyAULl4fNRLQktmR0hbLaXkBH9wTHOuvCDRT-TLu9MN2sS5">
+<div class="absolute top-4 left-4 bg-surface/85 backdrop-blur-md px-3 py-1 rounded-full text-label-sm font-label-sm uppercase text-primary border border-tertiary-fixed">
+                01 / Reception Pavilion
+              </div>
+</div>
+<div class="p-6 md:p-8 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">The Sunlit Reception Lounge</h3>
+<p class="font-body-md text-body-md text-secondary">
+                  Zero waiting room stress. Enjoy artisanal loose-leaf teas, tranquil acoustic zoning, and an unhurried check-in process.
+                </p>
+</div>
+<div class="mt-6 pt-4 border-t border-tertiary-fixed flex items-center justify-between text-label-sm text-secondary font-label-sm uppercase tracking-wider">
+<span>Natural Light • Travertine Stone</span>
+<span class="material-symbols-outlined text-primary text-base">spa</span>
+</div>
+</div>
+</div>
+<!-- Bento 2 & 3: Stacked Column -->
+<div class="md:col-span-5 flex flex-col gap-6 lg:gap-8">
+<!-- Bento 2: Suite Image -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden border border-tertiary-fixed flex flex-col group shadow-sm transition-all hover:border-outline flex-1">
+<div class="relative h-56 md:h-60 overflow-hidden">
+<img alt="Private Treatment Suite" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQtxyvi1Pgvg0xLmbBIIFz5l0VR2YbUojBjuEIHEucjV3W24J8QDv2c9DpDBofIYf0qER9MR5bP5vzzHnquBl54kJWt4_o-mrpW7ctURC6KR61rCV-pMdCFvnOMHgKwj9tIIp9neKAzNZo8QjAbO7cUK5MIVM78IOee8yOOF8G2PqcWuJKRpPsWydQsvFhaOiz8kWYwDlAKfIhI5awpk0CPlnNAWmwbSxEBVj2Blvk">
+<div class="absolute top-4 left-4 bg-surface/85 backdrop-blur-md px-3 py-1 rounded-full text-label-sm font-label-sm uppercase text-primary border border-tertiary-fixed">
+                  02 / Operatory Suite
+                </div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md text-primary text-xl mb-1.5">Private Treatment Suites</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+                  Equipped with sweeping San Francisco skyline vistas, ceiling relaxation monitors, and ultra-ergonomic memory foam chairs.
+                </p>
+</div>
+</div>
+<!-- Bento 3: Tech Image -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden border border-tertiary-fixed flex flex-col group shadow-sm transition-all hover:border-outline flex-1">
+<div class="relative h-56 md:h-60 overflow-hidden">
+<img alt="Modern Gentle Technology" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0DpCInDGjIwbIEbgu7ewVfmnZSZh8c1AaJgZPysTe-AnBq5MQ4u7gPklYhE1NyKQfnAG67zeniQ-9j0lWQPhc60cAuDAMdQWaqdvV8X-CBVqp9BL-xSulaEoOCsSQBz7gAV1oE-vIpxV6H5B5rjjjWlt_OFg4lPJvJNtSY3QXTykyaFdP0lM9Gps8rL8joEZ-WSN8Dkr489WboC3M4ksgkwfTlhhydkRmD2eTQzUR">
+<div class="absolute top-4 left-4 bg-surface/85 backdrop-blur-md px-3 py-1 rounded-full text-label-sm font-label-sm uppercase text-primary border border-tertiary-fixed">
+                  03 / Diagnostic Lab
+                </div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md text-primary text-xl mb-1.5">Modern Gentle Technology</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+                  Fast 3D intraoral digital impressions. No goopy impression molds, no radiation-heavy film, and completely painless diagnostics.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. SIMPLE, EDITORIAL TREATMENTS SECTION -->
+<section class="py-20 lg:py-space-2xl bg-surface" id="treatments">
+<div class="max-w-[1360px] mx-auto px-margin-tablet lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+<div>
+<p class="text-label-md font-label-md text-primary tracking-widest uppercase mb-2">Restorative &amp; Preventive Care</p>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary">
+              How We Take Care of Your Smile.
+            </h2>
+</div>
+<p class="font-body-md text-body-md text-secondary max-w-md">
+            Direct, transparent clinical care without jargon or aggressive treatment plans. Every procedure is customized to your biology and goals.
+          </p>
+</div>
+<!-- 6 Editorial Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+<!-- Card 01 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-tertiary-fixed flex flex-col justify-between hover:border-primary/40 transition-all duration-300 hover:shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-6 pb-4 border-b border-tertiary-fixed">
+<span class="font-headline-md text-headline-md text-primary/40">01</span>
+<span class="material-symbols-outlined text-primary text-xl">healing</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Toothache &amp; Emergency Relief</h3>
+<p class="font-body-md text-body-md text-secondary mb-6">
+                Sudden pain, swelling, or a broken tooth? We get you in the same day to numb the pain and fix the problem fast.
+              </p>
+</div>
+<a class="inline-flex items-center gap-2 text-label-md font-label-md uppercase tracking-wider text-primary group-hover:underline" href="#book-call">
+<span>Schedule a Call</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Card 02 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-tertiary-fixed flex flex-col justify-between hover:border-primary/40 transition-all duration-300 hover:shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-6 pb-4 border-b border-tertiary-fixed">
+<span class="font-headline-md text-headline-md text-primary/40">02</span>
+<span class="material-symbols-outlined text-primary text-xl">clean_hands</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Gentle Cleanings &amp; Exams</h3>
+<p class="font-body-md text-body-md text-secondary mb-6">
+                Thorough, painless plaque removal and digital checkups to keep your gums healthy and catch small issues early.
+              </p>
+</div>
+<a class="inline-flex items-center gap-2 text-label-md font-label-md uppercase tracking-wider text-primary group-hover:underline" href="#book-call">
+<span>Schedule a Call</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Card 03 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-tertiary-fixed flex flex-col justify-between hover:border-primary/40 transition-all duration-300 hover:shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-6 pb-4 border-b border-tertiary-fixed">
+<span class="font-headline-md text-headline-md text-primary/40">03</span>
+<span class="material-symbols-outlined text-primary text-xl">view_in_ar</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Natural Fillings &amp; Crowns</h3>
+<p class="font-body-md text-body-md text-secondary mb-6">
+                Repair cavities or cracked teeth with strong biocompatible porcelain that matches the exact shade of your natural smile.
+              </p>
+</div>
+<a class="inline-flex items-center gap-2 text-label-md font-label-md uppercase tracking-wider text-primary group-hover:underline" href="#book-call">
+<span>Schedule a Call</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Card 04 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-tertiary-fixed flex flex-col justify-between hover:border-primary/40 transition-all duration-300 hover:shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-6 pb-4 border-b border-tertiary-fixed">
+<span class="font-headline-md text-headline-md text-primary/40">04</span>
+<span class="material-symbols-outlined text-primary text-xl">dentistry</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Permanent Dental Implants</h3>
+<p class="font-body-md text-body-md text-secondary mb-6">
+                Replace missing teeth with permanent restorations that look, feel, and chew just like real teeth for lifetime stability.
+              </p>
+</div>
+<a class="inline-flex items-center gap-2 text-label-md font-label-md uppercase tracking-wider text-primary group-hover:underline" href="#book-call">
+<span>Schedule a Call</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Card 05 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-tertiary-fixed flex flex-col justify-between hover:border-primary/40 transition-all duration-300 hover:shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-6 pb-4 border-b border-tertiary-fixed">
+<span class="font-headline-md text-headline-md text-primary/40">05</span>
+<span class="material-symbols-outlined text-primary text-xl">auto_fix_high</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Clear Aligners (Invisalign®)</h3>
+<p class="font-body-md text-body-md text-secondary mb-6">
+                Straighten crooked or gappy teeth comfortably using clear, removable trays with zero metal brackets or painful wires.
+              </p>
+</div>
+<a class="inline-flex items-center gap-2 text-label-md font-label-md uppercase tracking-wider text-primary group-hover:underline" href="#book-call">
+<span>Schedule a Call</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Card 06 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-tertiary-fixed flex flex-col justify-between hover:border-primary/40 transition-all duration-300 hover:shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-6 pb-4 border-b border-tertiary-fixed">
+<span class="font-headline-md text-headline-md text-primary/40">06</span>
+<span class="material-symbols-outlined text-primary text-xl">wb_sunny</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Professional Whitening</h3>
+<p class="font-body-md text-body-md text-secondary mb-6">
+                Safely lift years of coffee, tea, and wine stains in a single 45-minute studio visit with zero sensitivity formulation.
+              </p>
+</div>
+<a class="inline-flex items-center gap-2 text-label-md font-label-md uppercase tracking-wider text-primary group-hover:underline" href="#book-call">
+<span>Schedule a Call</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. DEDICATED MEET THE DOCTOR SECTION (Standalone Warm Sand Section) -->
+<section class="py-20 lg:py-space-2xl bg-[#EFECE6] border-y border-tertiary-fixed" id="doctor">
+<div class="max-w-[1360px] mx-auto px-margin-tablet lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left: Portrait Photo Frame -->
+<div class="lg:col-span-5">
+<div class="relative rounded-2xl overflow-hidden border border-tertiary-fixed shadow-md bg-surface">
+<img class="w-full h-[520px] object-cover object-top" data-alt="Editorial portrait photograph of Dr. Julian Vance, an experienced cosmetic and restorative dentist in his early forties, wearing a tailored forest green crewneck sweater and crisp white collar, smiling warmly beside a bright window in an architectural San Francisco dental studio setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC10wrxYmpd-EqDH7UgV-hnkOSFv8niG96DX1NKM2lBIb2cdmBzzlHBVQG3Gso1YfN9h9n7_fqfDnC7okrORTnku7mj2r_h9CkKCpsRbgp5JGAIQmAJJM7bCSTqnYGy8Xh8Fk90WlGc18pH18--tGmbr7xipwrvsTZF0CN3q13F1d-ZnciKcUTi_8pqOBawN3YqNM7NEIV5iwXrLECgNMIXqql_nTjppjEh4Ic7PVmx">
+<div class="absolute bottom-4 left-4 right-4 bg-surface/90 backdrop-blur-md p-4 rounded-xl border border-tertiary-fixed flex items-center justify-between">
+<div>
+<p class="font-headline-md text-headline-md text-primary text-base">Dr. Julian Vance, DDS</p>
+<p class="font-body-sm text-body-sm text-secondary">Founder &amp; Lead Clinician</p>
+</div>
+<span class="px-2.5 py-1 rounded bg-primary text-surface text-label-sm font-label-sm uppercase">UCSF Alumni</span>
+</div>
+</div>
+</div>
+<!-- Right: Story & Perspective -->
+<div class="lg:col-span-7">
+<p class="text-label-md font-label-md text-primary tracking-widest uppercase mb-3">YOUR LEAD DENTIST</p>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-6">
+              Dr. Julian Vance, DDS
+            </h2>
+<blockquote class="font-headline-md text-headline-md text-primary font-normal italic leading-relaxed mb-6">
+              “Over the past 15 years in San Francisco, I’ve learned that most people don’t actually hate dentistry—they hate feeling rushed, judged, or in pain.”
+            </blockquote>
+<p class="font-body-xl text-body-xl text-secondary mb-8 leading-relaxed">
+              At Bayview Dental Studio, we take the time to listen first, explain everything in plain English, and make sure you never feel a thing. Whether you need immediate toothache relief or are planning a comprehensive smile restoration, you are always in complete control of your care.
+            </p>
+<!-- Credentials Bar -->
+<div class="py-5 px-6 rounded-xl bg-surface border border-tertiary-fixed mb-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center md:text-left divide-y md:divide-y-0 md:divide-x divide-tertiary-fixed">
+<div class="md:pr-4">
+<p class="font-headline-md text-headline-md text-primary font-semibold text-lg">UCSF School</p>
+<p class="font-body-sm text-body-sm text-secondary">Of Dentistry Alumni</p>
+</div>
+<div class="pt-3 md:pt-0 md:px-4">
+<p class="font-headline-md text-headline-md text-primary font-semibold text-lg">15+ Years</p>
+<p class="font-body-sm text-body-sm text-secondary">Clinical Practice</p>
+</div>
+<div class="pt-3 md:pt-0 md:pl-4">
+<p class="font-headline-md text-headline-md text-primary font-semibold text-lg">3,500+</p>
+<p class="font-body-sm text-body-sm text-secondary">Smiles Restored</p>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<a class="inline-flex items-center gap-2 bg-primary hover:bg-[#1f352c] text-surface font-label-md text-label-md uppercase tracking-wider px-6 py-3.5 rounded-lg transition-all" href="#book-call">
+<span>Request a Conversation</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. DEDICATED PATIENT REVIEWS (Separate Espresso Charcoal Dark Section) -->
+<section class="py-20 lg:py-space-2xl bg-[#141413] text-[#F7F5F0]" id="reviews">
+<div class="max-w-[1360px] mx-auto px-margin-tablet lg:px-margin">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<div class="inline-flex items-center gap-1.5 text-[#D4AF37] mb-3">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-white mb-4">
+            Loved by Over 400+ San Francisco Patients.
+          </h2>
+<p class="font-body-md text-body-md text-gray-400">
+            Real patient experiences from neighbors across Pacific Heights, the Marina, and SoMa.
+          </p>
+</div>
+<!-- 4 Staggered Ivory Review Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+<!-- Review 1 -->
+<div class="bg-[#1E1E1D] p-8 rounded-2xl border border-neutral-800 flex flex-col justify-between hover:border-neutral-700 transition-all duration-300">
+<div>
+<div class="flex items-center gap-1 text-[#D4AF37] mb-4">
+<span>★★★★★</span>
+<span class="text-xs text-gray-400 ml-2 font-mono">Emergency Visit</span>
+</div>
+<p class="font-headline-md text-headline-md text-gray-100 font-normal text-lg leading-relaxed mb-6">
+                “I called at 9 AM with terrible tooth pain and they saw me by 11 AM. Completely painless root canal and the nicest staff ever.”
+              </p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-neutral-800 text-sm">
+<span class="font-semibold text-white">Sarah M.</span>
+<span class="text-gray-400">Marina District, SF</span>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-[#1E1E1D] p-8 rounded-2xl border border-neutral-800 flex flex-col justify-between hover:border-neutral-700 transition-all duration-300 md:translate-y-4">
+<div>
+<div class="flex items-center gap-1 text-[#D4AF37] mb-4">
+<span>★★★★★</span>
+<span class="text-xs text-gray-400 ml-2 font-mono">General Dental</span>
+</div>
+<p class="font-headline-md text-headline-md text-gray-100 font-normal text-lg leading-relaxed mb-6">
+                “The clinic looks like a boutique hotel. Zero waiting time and Dr. Vance explained everything without pushing unnecessary work.”
+              </p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-neutral-800 text-sm">
+<span class="font-semibold text-white">David K.</span>
+<span class="text-gray-400">Pacific Heights, SF</span>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-[#1E1E1D] p-8 rounded-2xl border border-neutral-800 flex flex-col justify-between hover:border-neutral-700 transition-all duration-300">
+<div>
+<div class="flex items-center gap-1 text-[#D4AF37] mb-4">
+<span>★★★★★</span>
+<span class="text-xs text-gray-400 ml-2 font-mono">Gentle Cleaning</span>
+</div>
+<p class="font-headline-md text-headline-md text-gray-100 font-normal text-lg leading-relaxed mb-6">
+                “I used to be terrified of needles, but I didn’t even feel the numbing gel here. Best cleaning I’ve ever had in my life.”
+              </p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-neutral-800 text-sm">
+<span class="font-semibold text-white">Emily R.</span>
+<span class="text-gray-400">Nob Hill, SF</span>
+</div>
+</div>
+<!-- Review 4 -->
+<div class="bg-[#1E1E1D] p-8 rounded-2xl border border-neutral-800 flex flex-col justify-between hover:border-neutral-700 transition-all duration-300 md:translate-y-4">
+<div>
+<div class="flex items-center gap-1 text-[#D4AF37] mb-4">
+<span>★★★★★</span>
+<span class="text-xs text-gray-400 ml-2 font-mono">Cosmetic Porcelain</span>
+</div>
+<p class="font-headline-md text-headline-md text-gray-100 font-normal text-lg leading-relaxed mb-6">
+                “Fixed my chipped front tooth in one afternoon. Matches my real teeth 100%. People genuinely cannot tell which one was fixed.”
+              </p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-neutral-800 text-sm">
+<span class="font-semibold text-white">Marcus T.</span>
+<span class="text-gray-400">Presidio Heights, SF</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. CLICKABLE FAQ SECTION (Smooth native accordions) -->
+<section class="py-20 lg:py-space-2xl bg-surface" id="faq">
+<div class="max-w-[960px] mx-auto px-margin-tablet lg:px-margin">
+<div class="text-center mb-16">
+<p class="text-label-md font-label-md text-primary tracking-widest uppercase mb-2">Common Inquiries</p>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary">
+            Frequently Asked Questions.
+          </h2>
+</div>
+<div class="space-y-4">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest border border-tertiary-fixed rounded-xl overflow-hidden p-6 transition-colors duration-200 open:border-primary/50">
+<summary class="flex items-center justify-between cursor-pointer list-none select-none">
+<span class="font-headline-md text-headline-md text-primary text-xl">I have tooth pain right now. Can I come in today?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="pt-4 border-t border-tertiary-fixed/60 mt-4">
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+                Yes. We keep daily reserved time blocks open specifically for dental emergencies so we can get you out of pain the exact same day you call. Call us directly or request an urgent call below.
+              </p>
+</div>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest border border-tertiary-fixed rounded-xl overflow-hidden p-6 transition-colors duration-200 open:border-primary/50">
+<summary class="flex items-center justify-between cursor-pointer list-none select-none">
+<span class="font-headline-md text-headline-md text-primary text-xl">What if I’m nervous about dental visits?</span>
+<summary-icon class="material-symbols-outlined text-secondary transition-transform duration-300 group-open:rotate-180">expand_more</summary-icon>
+</summary>
+<div class="pt-4 border-t border-tertiary-fixed/60 mt-4">
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+                Just let us know on our quick intro call. Dental anxiety is extremely common. We use extra-strength topical numbing gels before any injection, offer noise-canceling headphones with streaming television, and move completely at your pace with hand signals to pause anytime.
+              </p>
+</div>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest border border-tertiary-fixed rounded-xl overflow-hidden p-6 transition-colors duration-200 open:border-primary/50">
+<summary class="flex items-center justify-between cursor-pointer list-none select-none">
+<span class="font-headline-md text-headline-md text-primary text-xl">How do I book my first visit?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="pt-4 border-t border-tertiary-fixed/60 mt-4">
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+                Simply request a quick call below or call us directly at (415) 555-0199. Our dedicated patient coordinator will answer your questions, explain what to expect, and reserve a convenient morning or afternoon slot.
+              </p>
+</div>
+</details>
+</div>
+</div>
+</section>
+<!-- 8. DIRECT "BOOK A CALL" SECTION -->
+<section class="py-20 lg:py-space-2xl bg-surface-container-low border-t border-tertiary-fixed" id="book-call">
+<div class="max-w-[1240px] mx-auto px-margin-tablet lg:px-margin">
+<div class="bg-surface-container-lowest rounded-3xl border border-tertiary-fixed overflow-hidden shadow-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12">
+<!-- Left Info Split -->
+<div class="lg:col-span-6 p-8 md:p-12 lg:p-16 flex flex-col justify-between bg-surface-container-high/40 border-b lg:border-b-0 lg:border-r border-tertiary-fixed">
+<div>
+<p class="text-label-md font-label-md text-primary tracking-widest uppercase mb-3">Concierge Scheduling</p>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-4 leading-tight">
+                  Have a Question or Ready to Visit? Request a Quick 2-Minute Call.
+                </h2>
+<p class="font-body-xl text-body-xl text-secondary mb-8">
+                  Leave your name and number, and our front desk coordinator will call you right back to answer your questions or lock in an unhurried time slot.
+                </p>
+<!-- Clinic Location Quick Snapshot -->
+<div class="space-y-3 pt-6 border-t border-tertiary-fixed text-body-sm text-secondary">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-base">location_on</span>
+<span>2100 Webster St, Suite 400, San Francisco, CA</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-base">schedule</span>
+<span>Monday – Saturday: 8:00 AM – 6:00 PM</span>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-6">
+<a class="inline-flex items-center gap-3 bg-surface border border-primary text-primary px-6 py-3.5 rounded-xl font-label-md text-label-md tracking-wider uppercase hover:bg-primary hover:text-surface transition-all duration-200" href="tel:+14155550199">
+<span class="material-symbols-outlined text-lg">phone_in_talk</span>
+<span>Or Call Us Now: (415) 555-0199</span>
+</a>
+</div>
+</div>
+<!-- Right Form Split -->
+<div class="lg:col-span-6 p-8 md:p-12 lg:p-16">
+<form class="space-y-6" id="booking-callback-form" onsubmit="event.preventDefault(); document.getElementById('booking-feedback').classList.remove('hidden'); this.classList.add('hidden');">
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-primary mb-2" for="full-name">
+                    Your Name
+                  </label>
+<input class="w-full bg-surface border border-tertiary-fixed rounded-lg px-4 py-3.5 text-on-surface placeholder:text-secondary/60 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary font-body-md" id="full-name" placeholder="e.g. Eleanor Vance" required="" type="text">
+</div>
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-primary mb-2" for="phone-number">
+                    Phone Number
+                  </label>
+<input class="w-full bg-surface border border-tertiary-fixed rounded-lg px-4 py-3.5 text-on-surface placeholder:text-secondary/60 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary font-body-md" id="phone-number" placeholder="(415) 000-0000" required="" type="tel">
+</div>
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-primary mb-2" for="treatment-concern">
+                    How Can We Help You?
+                  </label>
+<select class="w-full bg-surface border border-tertiary-fixed rounded-lg px-4 py-3.5 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary font-body-md" id="treatment-concern">
+<option value="Tooth Pain / Emergency">Tooth Pain / Emergency Visit</option>
+<option value="Routine Cleaning">Routine Cleaning &amp; Checkup</option>
+<option value="Cosmetic or Implants">Cosmetic Dentistry or Implants</option>
+<option value="Just a Question">I Just Have a Question</option>
+</select>
+</div>
+<div class="pt-2">
+<button class="w-full bg-primary hover:bg-[#1f352c] text-surface font-label-md text-label-md tracking-widest uppercase py-4 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 shadow-sm" type="submit">
+<span>Request My Call Back</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<p class="text-center font-body-sm text-body-sm text-secondary mt-3">
+                    No spam. We will only call you directly to assist your scheduling.
+                  </p>
+</div>
+</form>
+<!-- Dynamic Interactive Feedback Message -->
+<div class="hidden text-center py-12 px-6" id="booking-feedback">
+<div class="w-16 h-16 rounded-full bg-primary-fixed text-primary flex items-center justify-center mx-auto mb-4">
+<span class="material-symbols-outlined text-3xl">check</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Request Received</h3>
+<p class="font-body-md text-body-md text-secondary max-w-sm mx-auto mb-6">Thank you! Our care coordinator will call you back within 15 minutes.</p>
+<button class="text-label-md font-label-md text-primary uppercase tracking-wider underline underline-offset-4" onclick="document.getElementById('booking-feedback').classList.add('hidden'); document.getElementById('booking-callback-form').reset(); document.getElementById('booking-callback-form').classList.remove('hidden');">
+                  Send another inquiry
+                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER (Shared Component: Footer Anchor) -->
+<footer class="bg-surface-container-high border-t border-outline-variant/60 text-primary">
+<div class="max-w-[1360px] mx-auto px-margin-tablet lg:px-margin py-space-2xl flex flex-col gap-space-xl">
+<!-- Top Row -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<div class="md:col-span-5">
+<p class="font-headline-lg text-headline-lg tracking-[0.15em] uppercase text-primary font-medium mb-3">
+            BAYVIEW DENTAL STUDIO
+          </p>
+<p class="font-body-md text-body-md text-secondary max-w-md mb-4">
+            Architectural dentistry and thoughtful patient wellness. Restoring natural confidence through biology, light, and understated clinical craft.
+          </p>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">
+            San Francisco, California
+          </p>
+</div>
+<div class="md:col-span-3">
+<p class="font-label-md text-label-md uppercase tracking-widest text-primary font-semibold mb-4">
+            Studio Hours &amp; Visit
+          </p>
+<ul class="space-y-2 font-body-sm text-body-sm text-secondary">
+<li>2100 Webster St, Suite 400</li>
+<li>San Francisco, CA 94115</li>
+<li class="pt-2">Monday – Friday: 8:00 AM – 6:00 PM</li>
+<li>Saturday: 9:00 AM – 4:00 PM</li>
+<li class="pt-2">
+<a class="text-primary underline underline-offset-2" href="https://maps.google.com/?q=2100+Webster+St,+Suite+400,+San+Francisco,+CA+94115" rel="noopener noreferrer" target="_blank">
+                Open in Google Maps →
+              </a>
+</li>
+</ul>
+</div>
+<div class="md:col-span-4">
+<p class="font-label-md text-label-md uppercase tracking-widest text-primary font-semibold mb-4">
+            Navigation &amp; Care
+          </p>
+<div class="grid grid-cols-2 gap-2">
+<a class="text-secondary hover:text-primary transition-colors font-body-sm text-body-sm" href="#clinic-tour">Our Clinic</a>
+<a class="text-secondary hover:text-primary transition-colors font-body-sm text-body-sm" href="#treatments">Treatments</a>
+<a class="text-secondary hover:text-primary transition-colors font-body-sm text-body-sm" href="#doctor">Meet Dr. Vance</a>
+<a class="text-secondary hover:text-primary transition-colors font-body-sm text-body-sm" href="#reviews">Patient Reviews</a>
+<a class="text-secondary hover:text-primary transition-colors font-body-sm text-body-sm" href="#faq">FAQ</a>
+<a class="text-secondary hover:text-primary transition-colors font-body-sm text-body-sm" href="tel:+14155550199">Direct Phone</a>
+</div>
+</div>
+</div>
+<!-- Bottom Copyright Row -->
+<div class="pt-8 border-t border-tertiary-fixed flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-secondary">
+<p>© 2025 Bayview Dental Studio Atelier. Precision restorative aesthetics and clinical architecture. San Francisco, California. All rights reserved.</p>
+<div class="flex items-center space-x-6 text-label-sm font-label-sm uppercase tracking-wider">
+<a class="hover:text-primary transition-colors" href="#">Privacy Protocol</a>
+<a class="hover:text-primary transition-colors" href="#">Accessibility</a>
+<a class="text-primary font-semibold hover:underline" href="#book-call">Reserve Call</a>
+</div>
+</div>
+</div>
+</footer>
+
+
+</body></html>
